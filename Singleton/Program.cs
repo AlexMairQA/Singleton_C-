@@ -10,6 +10,10 @@ namespace Singleton
     {
         static void Main(string[] args)
         {
+            God myGod = God.GetInstance("I am the true god");
+            God falseGod = God.GetInstance("No! *I* am the true god!");
+
+            Console.WriteLine(myGod.getGodSays());
         }
     }
 }
